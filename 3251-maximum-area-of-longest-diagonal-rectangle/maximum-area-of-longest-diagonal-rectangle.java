@@ -2,9 +2,8 @@ class Solution {
     public int areaOfMaxDiagonal(int[][] dim) {
         double d_len = 0;
         int area = 0;
-        int len = dim.length;
         double x = 0;
-        for(int i = 0;i<len;i++){
+        for(int i = 0;i<dim.length;i++){
                 x = Math.hypot(dim[i][0] , dim[i][1]);
                 int mul = dim[i][0]*dim[i][1];
                 if(x > d_len){
