@@ -1,7 +1,7 @@
 class Solution {
     public int areaOfMaxDiagonal(int[][] dim) {
         double d_len = 0;
-        int area = Integer.MIN_VALUE;
+        int area = 0;
         int len = dim.length;
         double x = 0;
         for(int i = 0;i<len;i++){
