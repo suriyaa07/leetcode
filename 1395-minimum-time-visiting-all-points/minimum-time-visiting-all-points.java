@@ -15,7 +15,7 @@ class Solution {
             int dx = Math.abs(x1-x2);
             int dy = Math.abs(y1-y2);
 
-            count += Math.max(dx, dy);
+            count += Math.min(dx,dy) + Math.abs(dx-dy);
         }
         return count;
     }
