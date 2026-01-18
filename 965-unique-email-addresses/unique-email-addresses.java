@@ -1,7 +1,6 @@
 class Solution {
     public int numUniqueEmails(String[] emails) {
         Set<String> set = new HashSet<>();
-
         for(String i : emails){
             String domain = i.substring(i.indexOf("@"));
             String removeDot = i.substring(0,i.indexOf("@")+1).replace(".","");
