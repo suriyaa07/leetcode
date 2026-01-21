@@ -2,7 +2,7 @@ class Solution {
     public String reverseStr(String str, int k) {
         StringBuilder s = new StringBuilder(str);
 
-        for(int i = 0;i<s.length();i=2*k+i){
+        for(int i = 0;i<s.length();i=i+2*k){
             int l = i;
             int r = i+k-1;
             if(r>=s.length()){
@@ -14,7 +14,7 @@ class Solution {
             s.setCharAt(r,temp);
             l++;
             r--;
-        }
+            }
         }
     return s.toString();
     }
