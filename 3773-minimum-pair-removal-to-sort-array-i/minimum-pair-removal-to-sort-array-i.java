@@ -20,6 +20,7 @@ class Solution {
             if(list.get(i) + list.get(i-1) < min ){
                 min = list.get(i) + list.get(i-1);
                 index = i;
+                
             }
 
         }
