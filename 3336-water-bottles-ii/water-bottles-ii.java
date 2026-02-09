@@ -3,10 +3,7 @@ class Solution {
         int drank = bottle;
         int empty = bottle;
         while(empty >= rate){
-            empty-=rate;
-            drank++;
-            empty++;
-            rate++;
+            empty-=rate;drank++;empty++;rate++;
         }
         return drank;
     }
