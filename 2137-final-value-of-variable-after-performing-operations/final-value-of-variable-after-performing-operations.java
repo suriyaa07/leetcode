@@ -2,10 +2,12 @@ class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int x = 0;
         for(String i : operations){
-            if(i.equals("X++") || i.equals("++X"))
+            if(i.indexOf('+')!=-1){
                 x++;
-            if(i.equals("X--") || i.equals("--X"))
+            } else {
                 x--;
+            }
+            
         }
         return x;
     }
