@@ -7,8 +7,6 @@ class Solution {
             }
             s = sb.toString();
         }
-
         return s.charAt(0)==s.charAt(1);
-
     }
 }
