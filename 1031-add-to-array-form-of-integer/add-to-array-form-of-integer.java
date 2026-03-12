@@ -6,18 +6,12 @@ class Solution {
         while(len>=0 || k!=0){
             if(len>=0){
             k+=num[len];
-            list.add(k%10);
-            k/=10;
             len--;
             }
-            
-            if(len<0 && k!=0){
-                list.add(k%10);
-                k/=10;
-            }
+        list.add(k%10);
+        k/=10;
         }
         Collections.reverse(list);
         return list;
-
     }
 }
