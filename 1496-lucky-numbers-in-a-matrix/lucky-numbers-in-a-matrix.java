@@ -30,6 +30,7 @@ class Solution {
             for(int j : min){
                 if(i==j){
                     ans.add(i);
+                    break;
                 }
             }
         }
