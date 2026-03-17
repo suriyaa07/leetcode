@@ -1,10 +1,6 @@
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
         int len = arr.length;
-        if(len==1)
-            return arr[0];
-        if(len ==2)
-            return Math.max(arr[0],arr[1]);
         
         int start = 0;
         int end = len -1;
