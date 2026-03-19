@@ -29,9 +29,10 @@ class Solution {
         end = peak;
         while(start<=end){
             int mid1 = start+(end-start)/2;
-            if(mountainArr.get(mid1) < target)
+            int val = mountainArr.get(mid1);
+            if(val < target)
                 start = mid1+1;
-            else if(mountainArr.get(mid1) > target)
+            else if(val > target)
                 end = mid1 - 1;
             else
                 return mid1;
@@ -40,9 +41,10 @@ class Solution {
         end = len -1;
         while(start<=end){
             int mid2 = start+(end-start)/2;
-            if(mountainArr.get(mid2) > target)
+            int val = mountainArr.get(mid2);
+            if(val > target)
                 start = mid2+1;
-            else if(mountainArr.get(mid2) < target)
+            else if(val < target)
                 end = mid2 - 1;
             else
                 return mid2;
