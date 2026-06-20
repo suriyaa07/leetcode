@@ -15,7 +15,7 @@ class Solution {
                 bob1+=piles[i];
             }
         }
-        if(bob1>alex1 || bob2>alex2) return true;
+        if(alex1>bob1 || alex2>bob2) return true;
         return false;
     }
 }
