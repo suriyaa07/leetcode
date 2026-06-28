@@ -16,13 +16,9 @@ class Solution {
             len++;
             head = head.next;
         }
-        if(len==1) return node;
-        if(len==2) return node.next;
+        // if(len==1) return node;
+        // if(len==2) return node.next;
         int half = len/2;
-        boolean odd = true;
-        if(len%2==0){
-            odd = false;
-        }
         while(half>0){
             node = node.next;
             half = half-1;
