@@ -8,7 +8,6 @@ class Solution {
             temp = (temp*10) + rem;
             x/=10;
         }
-        if(clone==temp) return true;
-        return false;
+        return temp==clone;
     }
 }
